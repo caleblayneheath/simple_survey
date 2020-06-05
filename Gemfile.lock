@@ -1,0 +1,46 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    backports (3.17.2)
+    erubis (2.7.0)
+    multi_json (1.14.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.2)
+    puma (4.3.5)
+      nio4r (~> 2.0)
+    rack (2.2.2)
+    rack-protection (2.0.8.1)
+      rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    ruby2_keywords (0.0.2)
+    sinatra (2.0.8.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.8.1)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.8.1)
+      backports (>= 2.8.2)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.8.1)
+      sinatra (= 2.0.8.1)
+      tilt (~> 2.0)
+    tilt (2.0.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  erubis
+  puma
+  rack-test
+  sinatra
+  sinatra-contrib
+
+RUBY VERSION
+   ruby 2.6.3p62
+
+BUNDLED WITH
+   1.17.3
