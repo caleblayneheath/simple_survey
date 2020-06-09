@@ -11,10 +11,10 @@
     <% INSTRUMENT.each_with_index do |item, index| %>
       <li>
         <%= item[:question] %>
-        <p>
-          <input type='number' name="quest<%= index %>" id="quest<%= index %>"> <%= item[:unit] %>
-        </p>
+        <br>
+        <input class='field' type='number' name="quest<%= index %>" id="quest<%= index %>"> <%= item[:unit] %>
       </li>
+      <br>
     <% end %>
   </ol>
   <input type='submit' value='Score Test'>

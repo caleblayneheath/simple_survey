@@ -1,13 +1,19 @@
 body {
   background-color: cornsilk;
+  font-size: large;
 }
 
-li {
-  padding: 0.5rem;
+button, form, input {
+  font-size: xx-large;
 }
 
 .actions {
   padding: 0.5rem;
+  font-size: xx-large;
+}
+
+.field {
+  height: 500%;
 }
 
 .solutions {
@@ -17,7 +23,6 @@ li {
 
 .correct, .incorrect {
   font-style: bold;
-  display: inline;
 }
 
 .correct {

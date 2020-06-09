@@ -6,15 +6,13 @@
 <% INSTRUMENT.each_with_index do |item, index| %>
   <li>
     <p><%= item[:question] %></p>
-    
-    You answered <%= session[:answers][index] %> <%= item[:unit] %>.
-    
-    <% if session[:answers][index] == item[:solution] %>
-      <div class='correct'>Correct!</div>
-    <% else %>
-      <div class='incorrect'>Incorrect.</div>
-    <% end %>
+    <p>You answered <%= session[:answers][index] %> <%= item[:unit] %>.</p>
 
+      <% if session[:answers][index] == item[:solution] %>
+        <div class='correct'>Correct!</div>
+      <% else %>
+        <div class='incorrect'>Incorrect.</div>
+      <% end %>
     <button onclick="showSolution('solution<%= index %>')">Explanation</button>
     <div class='solutions' id='solution<%= index %>'display style='display:none;'>
       <p><%= item[:explanation] %></p>
@@ -26,7 +24,7 @@
 
 <div class='actions'>
   <form method='post' action='/reset'>
-    <label>Click the button if you want to try again.</label>
+    <label><p>Click the button below if you want to try again.</p></label>
     <input type='submit' value='Try Again'>
   </form>
 </div>
