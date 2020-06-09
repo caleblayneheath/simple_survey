@@ -3,6 +3,7 @@
 <p>The following survey questions are taken from the <a href='https://en.wikipedia.org/wiki/Cognitive_reflection_test'>cognitive reflection test</a>.</p>
 
 <p>Enter your answers to the questions in the text boxes.</p> 
+
 <p>USE ONLY NUMBERS IN YOUR ANSWERS.</p>
 
 <form action='/survey' method='post'>
@@ -11,7 +12,7 @@
       <li>
         <%= item[:question] %>
         <p>
-          <input type='text' name="quest<%= index %>" id="quest<%= index %>"> <%= item[:unit] %>
+          <input type='number' name="quest<%= index %>" id="quest<%= index %>"> <%= item[:unit] %>
         </p>
       </li>
     <% end %>

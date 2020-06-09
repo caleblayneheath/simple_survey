@@ -3,6 +3,7 @@ GEM
   specs:
     backports (3.17.2)
     erubis (2.7.0)
+    minitest (5.14.1)
     multi_json (1.14.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -34,6 +35,7 @@ PLATFORMS
 
 DEPENDENCIES
   erubis
+  minitest
   puma
   rack-test
   sinatra

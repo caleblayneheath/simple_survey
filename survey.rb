@@ -50,13 +50,13 @@ post '/survey' do
 end
 
 get '/results' do
-  redirect '/' unless session[:answers]
+  redirect '/' unless session[:answers] && session[:score]
   @answer = session[:answers]
   erb :results, layout: :layout
 end
 
 post '/reset' do
-  session.delete(:answer)
+  session.delete(:answers)
   session.delete(:score)
   redirect '/'
 end

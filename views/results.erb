@@ -10,9 +10,9 @@
     You answered <%= session[:answers][index] %> <%= item[:unit] %>.
     
     <% if session[:answers][index] == item[:solution] %>
-      <strong>Correct!</strong>
+      <div class='correct'>Correct!</div>
     <% else %>
-      <strong>Incorrect.</strong>
+      <div class='incorrect'>Incorrect.</div>
     <% end %>
 
     <button onclick="showSolution('solution<%= index %>')">Explanation</button>
@@ -27,7 +27,6 @@
 <div class='actions'>
   <form method='post' action='/reset'>
     <label>Click the button if you want to try again.</label>
-    <br>
     <input type='submit' value='Try Again'>
   </form>
 </div>

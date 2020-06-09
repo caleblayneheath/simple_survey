@@ -1,3 +1,7 @@
+body {
+  background-color: cornsilk;
+}
+
 li {
   padding: 0.5em;
 }
@@ -11,6 +15,15 @@ li {
   background-color: palegreen;
 }
 
-body {
-  background-color: cornsilk;
+.correct, .incorrect {
+  font-style: bold;
+  display: inline;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
 }
