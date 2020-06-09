@@ -5,3 +5,12 @@ li {
 .actions {
   padding: 0.5em;
 }
+
+.solutions {
+  font-style: italic;
+  background-color: palegreen;
+}
+
+body {
+  background-color: cornsilk;
+}

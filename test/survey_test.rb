@@ -11,6 +11,19 @@ class AppTest < Minitest::Test
     Sinatra::Application
   end
 
+  def test_view_survey
 
-  
+  end
+
+  def test_submit_survey
+
+  end
+
+  def test_redirect_to_results
+
+  end
+
+  def test_redirect_to_survey
+
+  end  
 end

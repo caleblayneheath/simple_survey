@@ -1,19 +1,25 @@
 <h1>Results</h1>
+
 <h2>You scored <%= session[:score] %> out of 3!</h2>
-<%= session[:ans1] %>
+
 <ol>
 <% INSTRUMENT.each_with_index do |item, index| %>
   <li>
-    <p>
-      <%= item[:question] %>
-    </p>
-    You answered <%= session[:answers][index] %> <%= item[:unit] %>.
-    <% if session[:answers][index] == item[:solution] %>
-      <strong>That's correct!</strong>
-    <% else %>
-      <strong>That's incorrect.</strong>
-    <% end %>
+    <p><%= item[:question] %></p>
     
+    You answered <%= session[:answers][index] %> <%= item[:unit] %>.
+    
+    <% if session[:answers][index] == item[:solution] %>
+      <strong>Correct!</strong>
+    <% else %>
+      <strong>Incorrect.</strong>
+    <% end %>
+
+    <button onclick="showSolution('solution<%= index %>')">Explanation</button>
+    <div class='solutions' id='solution<%= index %>'display style='display:none;'>
+      <p><%= item[:explanation] %></p>
+    </div>
+
   </li>
 <% end %>
 </ol>
@@ -25,3 +31,14 @@
     <input type='submit' value='Try Again'>
   </form>
 </div>
+
+<script>
+function showSolution(solution) {
+  var x = document.getElementById(solution);
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script>
