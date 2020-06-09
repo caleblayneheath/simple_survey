@@ -12,10 +12,6 @@ button, form, input {
   font-size: xx-large;
 }
 
-.field {
-  height: 500%;
-}
-
 .solutions {
   font-style: italic;
   background-color: palegreen;
